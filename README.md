@@ -1,2 +1,3 @@
 # Javascript
-Sandbox Repo to hold code depveloped as part of course - The Complete Javascript Course
+
+Sandbox Repo to hold code developed as part of course - The Complete Javascript Course 2023
