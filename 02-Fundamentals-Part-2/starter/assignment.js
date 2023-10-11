@@ -66,6 +66,7 @@ const worldPopulation = 7900;
 // Arrow Function//
 const percentageOfWorld = (population) => (population / worldPopulation) * 100;
 
+// Array of Countries//
 const countries = [
   { name: "China", population: 1441 },
   { name: "Nigeria", population: 213 },
@@ -91,3 +92,20 @@ console.log(describePopulation("Nigeria"));
 console.log(describePopulation("China"));
 console.log(describePopulation("USA"));
 console.log(describePopulation("Jamaica"));
+
+const populations = [
+  { name: "China", population: 1441 },
+  { name: "Nigeria", population: 213 },
+  { name: "USA", population: 331 },
+  { name: "UK", population: 67.3 },
+];
+
+console.log(`Are there 4 elements in the array: ${populations.length === 4}`);
+const percentages = [];
+populations.forEach((element) => {
+  percentages.push(((element.population / worldPopulation) * 100).toFixed(2));
+});
+
+console.log(
+  `Here are the percentage of each country in the given array: ${percentages}`
+);
