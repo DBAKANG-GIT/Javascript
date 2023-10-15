@@ -1,0 +1,4 @@
+{
+  "editor.fontFamily": " Fira_Code, Anonymous_Pro, Menlo, Monaco, 'Courier New', monospace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
