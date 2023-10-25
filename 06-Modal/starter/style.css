@@ -73,6 +73,10 @@ p {
   z-index: 10;
 }
 
+.close-modal:hover {
+  color: coral;
+}
+
 .overlay {
   position: absolute;
   top: 0;
