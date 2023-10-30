@@ -9,7 +9,6 @@ btnOpenModal = document.querySelectorAll(".show-modal"); //all which match the n
 for (const element of btnOpenModal) {
   // Add event listeners
   element.addEventListener("click", function () {
-    console.log("Button Clicked");
     console.log(element.textContent);
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
@@ -24,3 +23,12 @@ const closeModal = function () {
 
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
+
+//Esc Key
+document.addEventListener("keydown", function (event) {
+  console.log(event);
+  if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+    //if the modal is not
+    closeModal();
+  }
+});
