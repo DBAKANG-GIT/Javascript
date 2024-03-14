@@ -204,7 +204,7 @@ const books = [
     author: "Cal Newport",
     publisher: "Grand Central Publishing",
     publicationDate: "2016-01-05",
-    edition: 1,
+    edition: 0,
     keywords: ["work", "focus", "personal development", "business"],
     pages: 296,
     format: "hardcover",
@@ -222,11 +222,37 @@ const books = [
     highlighted: true,
   },
 ];
+// let answer = () => {
+//   books.forEach(
+//     (book) =>
+//       book.onlineContent ??
+//       console.log(`${book.title} provides no data about its online content`)
+//   );
+// };
+// answer();
+
+// Logical Assignment Opertaors
+// 7.1
+// let answer = () => {
+//   books.forEach((book) => (book.edition ??= 999));
+// };
+// answer();
+
+// let test = () => {
+//   books.forEach(
+//     (book) =>
+//       book.edition ??
+//       console.log(`${book.title} provides no data about edition`)
+//   );
+// };
+// test();
+
+// console.log(books);
+
+// 7.2
 let answer = () => {
   books.forEach(
-    (book) =>
-      book.onlineContent ??
-      console.log(`${book.title} provides no data about its online content`)
+    (book) => (book.highlighted &&= !book.thirdParty.goodreads.rating < 4.2)
   );
 };
 answer();

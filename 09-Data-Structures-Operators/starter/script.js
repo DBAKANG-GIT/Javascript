@@ -27,3 +27,25 @@ const restaurant = {
     },
   },
 };
+
+const rest1 = {
+  name: 'Capri',
+  numGuests: 20,
+};
+
+const rest2 = {
+  name: 'La Piazza',
+  owner: 'Giovanni Rossi',
+  numGuests: undefined,
+};
+
+// Logical OR assignment Operators
+// rest2.numGuests = rest2.numGuests || 0; // this adds the new object
+// rest2.numGuests ||= 30;
+
+//  nullish assignment Operators
+rest2.numGuests ??= 40;
+
+// logical and operator
+rest2.owner &&= 'John Doe';
+console.log(rest2);
